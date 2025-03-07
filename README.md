@@ -28,6 +28,14 @@ Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
 
-The invariant of my `fib()` is that for every loop iteration `fib_i` will be the sum of the previous two numbers in the array. If we wanted to prove the function we could use this for an inductive proof to proof that for every F(n) = F(n-1) + F(n-2). Which is the definition of F(n), where F(n) is the fibonacci sequence.
+The invariant of my `fib()` is that for all elements `i` of the array `fib_array`,
+ if the element index is > 1, then the element will be the sum the previous two elements of the array.
+
+
+
+
+
+
+
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
