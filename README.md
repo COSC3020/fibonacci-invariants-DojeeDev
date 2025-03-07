@@ -27,3 +27,12 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+The invariant of my `fib()` is that for all elements `f` of the array `fib_array` where `i` is the index of the element `f`:
++ if i = 0, f = 0
++ if i = 1, f = 1
++ if i > 1, then the element will be the sum the previous two elements of the array, `f = fib_array[i-1] + fib_array[i-2]`.
+  
+
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
