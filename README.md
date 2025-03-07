@@ -28,8 +28,6 @@ Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
 
-The invariant of my fib() is that each array returned will be a fibonacci sequence. We know this is true because either n > 1 and we are going to continue to call until we get to the base case or we are at the base case which returns a valid fibonacci sequence of [0] or [0,1]. Then we know that if fib(1) = [0,1] then fib(2) = [0,1, (previous two values added together, aka also 1)]. Knowing this we know that any array returned within the recursive calls is a valid fibonacci sequence.
-
-
+The invariant of my `fib()` is that for every loop iteration `fib_i` will be the sum of the previous two numbers in the array. If we wanted to prove the function we could use this for an inductive proof to proof that for every F(n) = F(n-1) + F(n-2). Which is the definition of F(n), where F(n) is the fibonacci sequence.
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
