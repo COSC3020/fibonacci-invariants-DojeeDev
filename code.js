@@ -1,12 +1,14 @@
 function fib(n) {
-    if (n == 0) {
-        return [0];   
-    }
-    if (n == 1) {
-        return [0, 1];
-    }
+  if (n == 0) { return [0]; }
 
-    var f = fib(n - 1);
-    f.push(f[n - 1] + f[n - 2]);
-    return f;
-};
+  var fib_array = [0,1]
+
+  while (n > (fib_array.length-1)) {
+    var i = fib_array.length;
+    var fib_i = fib_array[i-1] + fib_array[i-2];
+    fib_array.push(fib_i);
+  }
+
+  return fib_array;
+}
+
